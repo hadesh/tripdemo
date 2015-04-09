@@ -18,6 +18,9 @@
 
 @end
 
+/**
+ *  搜索地点的视图控制器。使用UISearchBar，对关键字进行搜索，得到相关POI信息。
+ */
 @interface DDSearchViewController : UIViewController
 
 @property (nonatomic, assign) id<DDSearchViewControllerDelegate> delegate;

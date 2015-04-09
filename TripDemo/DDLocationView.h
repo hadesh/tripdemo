@@ -19,6 +19,9 @@
 
 @end
 
+/**
+ *  显示起始位置以及路径信息的视图。
+ */
 @interface DDLocationView : UIView
 
 @property (nonatomic, assign) id<DDLocationViewDelegate> delegate;

@@ -25,9 +25,10 @@
 		81B5E8D71ACE8B1800AA7FFE /* DDLocationControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5E8D61ACE8B1800AA7FFE /* DDLocationControl.m */; };
 		81B5E8D91ACE949700AA7FFE /* icon_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81B5E8D81ACE949700AA7FFE /* icon_next@2x.png */; };
 		81B5E9711AD3CCB200AA7FFE /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81B5E9701AD3CCB200AA7FFE /* Launch Screen.xib */; };
+		81B5E9A01AD61EF000AA7FFE /* DDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5E99D1AD61EF000AA7FFE /* DDDriver.m */; };
+		81B5E9A11AD61EF000AA7FFE /* DDTaxiCallRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B5E99F1AD61EF000AA7FFE /* DDTaxiCallRequest.m */; };
+		81B5E9A81AD6269400AA7FFE /* icon_passenger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81B5E9A71AD6269400AA7FFE /* icon_passenger@2x.png */; };
 		C81057811ACE49BE00CD0D55 /* DDDriverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C81057801ACE49BE00CD0D55 /* DDDriverManager.m */; };
-		C81057841ACE4D2B00CD0D55 /* DDTaxiCallRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C81057831ACE4D2B00CD0D55 /* DDTaxiCallRequest.m */; };
-		C81057871ACE4E5800CD0D55 /* DDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = C81057861ACE4E5800CD0D55 /* DDDriver.m */; };
 		C81057891ACE791600CD0D55 /* MANaviRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = C81057881ACE791600CD0D55 /* MANaviRoute.m */; };
 		C810578D1ACE7A8100CD0D55 /* CommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C810578C1ACE7A8100CD0D55 /* CommonUtility.m */; };
 		C810578F1ACE959200CD0D55 /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C810578E1ACE959200CD0D55 /* location@2x.png */; };
@@ -76,15 +77,16 @@
 		81B5E8D61ACE8B1800AA7FFE /* DDLocationControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLocationControl.m; sourceTree = "<group>"; };
 		81B5E8D81ACE949700AA7FFE /* icon_next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_next@2x.png"; sourceTree = "<group>"; };
 		81B5E9701AD3CCB200AA7FFE /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		81B5E99C1AD61EF000AA7FFE /* DDDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDriver.h; sourceTree = "<group>"; };
+		81B5E99D1AD61EF000AA7FFE /* DDDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDriver.m; sourceTree = "<group>"; };
+		81B5E99E1AD61EF000AA7FFE /* DDTaxiCallRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTaxiCallRequest.h; sourceTree = "<group>"; };
+		81B5E99F1AD61EF000AA7FFE /* DDTaxiCallRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTaxiCallRequest.m; sourceTree = "<group>"; };
+		81B5E9A71AD6269400AA7FFE /* icon_passenger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_passenger@2x.png"; sourceTree = "<group>"; };
 		99D4020278137ED6381EAB44 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9C39A8814C68E7F2921698C7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7442B0F673CF951904E84F9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C810577F1ACE49BE00CD0D55 /* DDDriverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDriverManager.h; sourceTree = "<group>"; };
 		C81057801ACE49BE00CD0D55 /* DDDriverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDriverManager.m; sourceTree = "<group>"; };
-		C81057821ACE4D2B00CD0D55 /* DDTaxiCallRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDTaxiCallRequest.h; path = ../DDTaxiCallRequest.h; sourceTree = "<group>"; };
-		C81057831ACE4D2B00CD0D55 /* DDTaxiCallRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDTaxiCallRequest.m; path = ../DDTaxiCallRequest.m; sourceTree = "<group>"; };
-		C81057851ACE4E5800CD0D55 /* DDDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDDriver.h; path = ../DDDriver.h; sourceTree = "<group>"; };
-		C81057861ACE4E5800CD0D55 /* DDDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDDriver.m; path = ../DDDriver.m; sourceTree = "<group>"; };
 		C81057881ACE791600CD0D55 /* MANaviRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANaviRoute.m; sourceTree = "<group>"; };
 		C810578A1ACE792500CD0D55 /* MANaviRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MANaviRoute.h; sourceTree = "<group>"; };
 		C810578B1ACE7A7800CD0D55 /* CommonUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUtility.h; sourceTree = "<group>"; };
@@ -151,12 +153,12 @@
 				81B5E8D61ACE8B1800AA7FFE /* DDLocationControl.m */,
 				81037A071ACD7ABA0013124A /* DDLocation.h */,
 				81037A081ACD7ABA0013124A /* DDLocation.m */,
+				81B5E99C1AD61EF000AA7FFE /* DDDriver.h */,
+				81B5E99D1AD61EF000AA7FFE /* DDDriver.m */,
+				81B5E99E1AD61EF000AA7FFE /* DDTaxiCallRequest.h */,
+				81B5E99F1AD61EF000AA7FFE /* DDTaxiCallRequest.m */,
 				C810577F1ACE49BE00CD0D55 /* DDDriverManager.h */,
 				C81057801ACE49BE00CD0D55 /* DDDriverManager.m */,
-				C81057821ACE4D2B00CD0D55 /* DDTaxiCallRequest.h */,
-				C81057831ACE4D2B00CD0D55 /* DDTaxiCallRequest.m */,
-				C81057851ACE4E5800CD0D55 /* DDDriver.h */,
-				C81057861ACE4E5800CD0D55 /* DDDriver.m */,
 				C810578A1ACE792500CD0D55 /* MANaviRoute.h */,
 				C81057881ACE791600CD0D55 /* MANaviRoute.m */,
 				C810578B1ACE7A7800CD0D55 /* CommonUtility.h */,
@@ -169,6 +171,7 @@
 				C81057901AD38CEF00CD0D55 /* Toast+UIView.h */,
 				C81057911AD38CEF00CD0D55 /* Toast+UIView.m */,
 				C810578E1ACE959200CD0D55 /* location@2x.png */,
+				81B5E9A71AD6269400AA7FFE /* icon_passenger@2x.png */,
 				81B5E8D81ACE949700AA7FFE /* icon_next@2x.png */,
 				C810579B1AD3AE7D00CD0D55 /* icon_taxi@2x.png */,
 				81037A0A1ACD7BAE0013124A /* endPoint.png */,
@@ -321,6 +324,7 @@
 			files = (
 				81037A101ACD7BAE0013124A /* endPoint@2x.png in Resources */,
 				C810578F1ACE959200CD0D55 /* location@2x.png in Resources */,
+				81B5E9A81AD6269400AA7FFE /* icon_passenger@2x.png in Resources */,
 				81037A0F1ACD7BAE0013124A /* endPoint.png in Resources */,
 				810379E81ACD6E0A0013124A /* Main.storyboard in Resources */,
 				81037A121ACD7BAE0013124A /* startPoint.png in Resources */,
@@ -380,19 +384,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				81B5E8D71ACE8B1800AA7FFE /* DDLocationControl.m in Sources */,
+				81B5E9A11AD61EF000AA7FFE /* DDTaxiCallRequest.m in Sources */,
 				C81057891ACE791600CD0D55 /* MANaviRoute.m in Sources */,
 				C810578D1ACE7A8100CD0D55 /* CommonUtility.m in Sources */,
 				81B5E8D01ACE3E3A00AA7FFE /* DDSearchViewController.m in Sources */,
 				810379E51ACD6E0A0013124A /* ViewController.m in Sources */,
-				C81057871ACE4E5800CD0D55 /* DDDriver.m in Sources */,
 				81037A091ACD7ABA0013124A /* DDLocation.m in Sources */,
 				C810579A1AD390DD00CD0D55 /* MovingAnnotationView.m in Sources */,
 				810379E21ACD6E0A0013124A /* AppDelegate.m in Sources */,
 				810379DF1ACD6E0A0013124A /* main.m in Sources */,
+				81B5E9A01AD61EF000AA7FFE /* DDDriver.m in Sources */,
 				C81057991AD390DD00CD0D55 /* CACoordLayer.m in Sources */,
 				81B5E8D31ACE47DE00AA7FFE /* DDSearchManager.m in Sources */,
 				81037A051ACD79CB0013124A /* DDLocationView.m in Sources */,
-				C81057841ACE4D2B00CD0D55 /* DDTaxiCallRequest.m in Sources */,
 				C81057921AD38CEF00CD0D55 /* Toast+UIView.m in Sources */,
 				C81057811ACE49BE00CD0D55 /* DDDriverManager.m in Sources */,
 			);
@@ -509,6 +513,7 @@
 			baseConfigurationReference = 99D4020278137ED6381EAB44 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TripDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -521,6 +526,7 @@
 			baseConfigurationReference = C7442B0F673CF951904E84F9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TripDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

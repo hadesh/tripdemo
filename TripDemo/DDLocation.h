@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
+/**
+ *  封装位置信息。
+ */
 @interface DDLocation : NSObject
 
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;

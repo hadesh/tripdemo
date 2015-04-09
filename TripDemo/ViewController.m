@@ -118,9 +118,27 @@ typedef NS_ENUM(NSUInteger, DDState) {
 
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
 {
+    /* 自定义userLocation对应的annotationView. */
+    if ([annotation isKindOfClass:[MAUserLocation class]])
+    {
+        static NSString *userLocationStyleReuseIndetifier = @"userLocationReuseIndetifier";
+        MAAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:userLocationStyleReuseIndetifier];
+        if (annotationView == nil)
+        {
+            annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation
+                                                             reuseIdentifier:userLocationStyleReuseIndetifier];
+        }
+        UIImage *image = [UIImage imageNamed:@"icon_passenger"];
+        annotationView.image = image;
+        annotationView.centerOffset = CGPointMake(0, -22);
+        annotationView.canShowCallout = YES;
+        
+        return annotationView;
+    }
+    
     if ([annotation isKindOfClass:[MAPointAnnotation class]])
     {
-        static NSString *pointReuseIndetifier = @"driver";
+        static NSString *pointReuseIndetifier = @"driverReuseIndetifier";
         
         MovingAnnotationView *annotationView = (MovingAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndetifier];
         if (annotationView == nil)
@@ -132,7 +150,7 @@ typedef NS_ENUM(NSUInteger, DDState) {
         UIImage *image = [UIImage imageNamed:@"icon_taxi"];
         
         annotationView.image = image;
-        annotationView.centerOffset = CGPointMake(0, -image.size.height / 2.0);
+        annotationView.centerOffset = CGPointMake(0, -22);
         annotationView.canShowCallout = YES;
         
         return annotationView;
@@ -157,13 +175,15 @@ typedef NS_ENUM(NSUInteger, DDState) {
     _mapView.showsCompass = NO;
     _mapView.rotateEnabled = NO;
     _mapView.showsScale = NO;
+
+    // 去除精度圈。
+    _mapView.customizeUserLocationAccuracyCircleRepresentation = YES;
     [self.view addSubview:_mapView];
     
     _driverManager = [[DDDriverManager alloc] init];
     _driverManager.delegate = self;
     
     // controls
-    
     _buttonAction = [UIButton buttonWithType:UIButtonTypeCustom];
     _buttonAction.backgroundColor = [UIColor colorWithRed:13.0/255.0 green:79.0/255.0 blue:139.0/255.0 alpha:1.0];
     _buttonAction.layer.cornerRadius = 6;
@@ -503,6 +523,9 @@ typedef NS_ENUM(NSUInteger, DDState) {
 {
     _mapView.centerCoordinate = coordinate;
     _mapView.zoomLevel = 15.1;
+    
+    // 使得userLocationView在最前。
+    [_mapView selectAnnotation:_mapView.userLocation animated:YES];
 }
 
 #pragma mark - DDLocationViewDelegate

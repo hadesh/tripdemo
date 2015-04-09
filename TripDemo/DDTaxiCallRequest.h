@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "DDLocation.h"
 
+/**
+ *  用车请求对象。
+ */
 @interface DDTaxiCallRequest : NSObject
 
 @property (nonatomic, strong) DDLocation * start;

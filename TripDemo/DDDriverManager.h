@@ -13,6 +13,9 @@
 
 @protocol DDDriverManagerDelegate;
 
+/**
+ *  司机相关管理类。获取司机数据、发送用车请求等。
+ */
 @interface DDDriverManager : NSObject
 
 @property (nonatomic, weak) id<DDDriverManagerDelegate> delegate;

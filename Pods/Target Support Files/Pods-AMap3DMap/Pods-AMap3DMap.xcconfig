@@ -1,0 +1,3 @@
+PODS_AMAP_DMAP_ARCHS = $(ARCHS_STANDARD)
+PODS_AMAP_DMAP_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/AMap3DMap"
+PODS_AMAP_DMAP_OTHER_LDFLAGS = -ObjC -l"stdc++.6.0.9" -l"z" -framework "CoreLocation" -framework "CoreTelephony" -framework "MAMapKit" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"

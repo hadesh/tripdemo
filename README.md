@@ -20,8 +20,8 @@ DDDriverManager 用于管理司机相关操作。
 
 ### 截图效果
 
-![start](snapshots/start.PNG)
+![start](snapshots/start.png)
 
-![search](snapshots/search.PNG)
+![search](snapshots/search.png)
 
-![end](snapshots/end.PNG)
+![end](snapshots/end.png)

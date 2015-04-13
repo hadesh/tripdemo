@@ -30,7 +30,7 @@ typedef NS_ENUM(NSUInteger, DDState) {
 #define kLocationViewMargin     20
 #define kButtonMargin           20
 #define kButtonHeight           40
-#define kAppName                @"德德用车"
+#define kAppName                @"高小德用车"
 
 @interface ViewController ()<MAMapViewDelegate, DDSearchViewControllerDelegate, DDDriverManagerDelegate, DDLocationViewDelegate>
 {

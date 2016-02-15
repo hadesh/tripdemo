@@ -1,3 +1,0 @@
-PODS_AMAPSEARCH_ARCHS = $(ARCHS_STANDARD)
-PODS_AMAPSEARCH_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/AMapSearch"
-PODS_AMAPSEARCH_OTHER_LDFLAGS = -ObjC -l"stdc++.6.0.9" -l"z" -framework "AMapSearchKit" -framework "CoreTelephony" -framework "SystemConfiguration"

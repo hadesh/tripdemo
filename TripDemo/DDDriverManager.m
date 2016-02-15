@@ -97,8 +97,7 @@
 //找驾车到达乘客位置的路径
 - (void)searchPathFrom:(CLLocationCoordinate2D)from to:(CLLocationCoordinate2D)to
 {
-    AMapNavigationSearchRequest *navi = [[AMapNavigationSearchRequest alloc] init];
-    navi.searchType       = AMapSearchType_NaviDrive;
+    AMapDrivingRouteSearchRequest *navi = [[AMapDrivingRouteSearchRequest alloc] init];
     navi.requireExtension = YES;
     
     /* 出发点. */
@@ -111,7 +110,7 @@
     __weak __typeof(&*self) weakSelf = self;
     [[DDSearchManager sharedInstance] searchForRequest:navi completionBlock:^(id request, id response, NSError *error) {
         
-        AMapNavigationSearchResponse * naviResponse = response;
+        AMapRouteSearchResponse *naviResponse = response;
 
         NSLog(@"%@", naviResponse);
         if (naviResponse.route == nil)

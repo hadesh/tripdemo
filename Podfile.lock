@@ -1,13 +1,13 @@
 PODS:
-  - AMap3DMap (2.4.2)
-  - AMapSearch (2.4.1)
+  - AMap3DMap (3.3.0)
+  - AMapSearch (3.2.0)
 
 DEPENDENCIES:
-  - AMap3DMap (= 2.4.2)
-  - AMapSearch (= 2.4.1)
+  - AMap3DMap
+  - AMapSearch
 
 SPEC CHECKSUMS:
-  AMap3DMap: 6929b8f2191007dc9863553a582b9d7ba78ac1bf
-  AMapSearch: e48c562fc7713f7e5f719863a15141a847e16c04
+  AMap3DMap: be6d5c4f239b41b7fa3589871779cc5614f4eb27
+  AMapSearch: a885f0702578a441a22cb66fa74f8918c6d19e6f
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.39.0

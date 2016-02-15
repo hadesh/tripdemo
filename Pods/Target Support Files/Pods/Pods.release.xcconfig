@@ -1,8 +1,7 @@
 ARCHS = $(ARCHS_STANDARD)
-FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/AMap3DMap" "$(PODS_ROOT)/AMapSearch"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/AMap3DMap" "${PODS_ROOT}/AMapSearch"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AMap3DMap" "${PODS_ROOT}/Headers/Public/AMapSearch"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AMap3DMap" "${PODS_ROOT}/Headers/Public/AMapSearch"
 OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AMap3DMap" -isystem "${PODS_ROOT}/Headers/Public/AMapSearch"
-OTHER_LDFLAGS = -ObjC -l"Pods-AMap3DMap" -l"Pods-AMapSearch" -l"stdc++.6.0.9" -l"z" -framework "AMapSearchKit" -framework "CoreLocation" -framework "CoreTelephony" -framework "MAMapKit" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
-OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"stdc++.6.0.9" -l"z" -framework "AMapSearchKit" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "CoreText" -framework "MAMapKit" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
 PODS_ROOT = ${SRCROOT}/Pods

@@ -30,7 +30,7 @@ typedef NS_ENUM(NSUInteger, DDState) {
 #define kLocationViewMargin     20
 #define kButtonMargin           20
 #define kButtonHeight           40
-#define kAppName                @"高小德用车"
+#define kAppName                @"德德用车"
 
 @interface ViewController ()<MAMapViewDelegate, DDSearchViewControllerDelegate, DDDriverManagerDelegate, DDLocationViewDelegate>
 {
@@ -429,8 +429,7 @@ typedef NS_ENUM(NSUInteger, DDState) {
 - (void)requestPathInfo
 {
     //检索所需费用
-    AMapNavigationSearchRequest *navi = [[AMapNavigationSearchRequest alloc] init];
-    navi.searchType       = AMapSearchType_NaviDrive;
+    AMapDrivingRouteSearchRequest *navi = [[AMapDrivingRouteSearchRequest alloc] init];
     navi.requireExtension = YES;
     
     /* 出发点. */
@@ -443,7 +442,7 @@ typedef NS_ENUM(NSUInteger, DDState) {
     __weak __typeof(&*self) weakSelf = self;
     [[DDSearchManager sharedInstance] searchForRequest:navi completionBlock:^(id request, id response, NSError *error) {
         
-        AMapNavigationSearchResponse * naviResponse = response;
+        AMapRouteSearchResponse *naviResponse = response;
         
         if (naviResponse.route == nil)
         {

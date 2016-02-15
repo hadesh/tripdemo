@@ -97,14 +97,13 @@
         return;
     }
 
-    AMapPlaceSearchRequest *request = [[AMapPlaceSearchRequest alloc] init];
+    AMapPOIKeywordsSearchRequest *request = [[AMapPOIKeywordsSearchRequest alloc] init];
     request.requireExtension = YES;
-    request.searchType = AMapSearchType_PlaceKeyword;
     request.keywords = key;
     
     if (self.city.length > 0)
     {
-        request.city = @[self.city];
+        request.city = self.city;
     }
     
     __weak __typeof(&*self) weakSelf = self;
@@ -117,7 +116,7 @@
         {
             [weakSelf.locations removeAllObjects];
             
-            AMapPlaceSearchResponse *aResponse = (AMapPlaceSearchResponse *)response;
+            AMapPOISearchResponse *aResponse = (AMapPOISearchResponse *)response;
             [aResponse.pois enumerateObjectsUsingBlock:^(AMapPOI *obj, NSUInteger idx, BOOL *stop)
              {
                  DDLocation *location = [[DDLocation alloc] init];

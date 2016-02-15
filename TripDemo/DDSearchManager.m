@@ -34,7 +34,8 @@
     self = [super init];
     if (self)
     {
-        _search  = [[AMapSearchAPI alloc] initWithSearchKey:@"c51c42708d693e61c4a89e7b4fea195f" Delegate:self];
+        _search  = [[AMapSearchAPI alloc] init];
+        _search.delegate = self;
         
         _mapTable = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsStrongMemory valueOptions:NSPointerFunctionsCopyIn];
     }
@@ -43,13 +44,13 @@
 
 - (void)searchForRequest:(id)request completionBlock:(DDSearchCompletionBlock)block
 {
-    if ([request isKindOfClass:[AMapPlaceSearchRequest class]])
+    if ([request isKindOfClass:[AMapPOIKeywordsSearchRequest class]])
     {
-        [_search AMapPlaceSearch:request];
+        [_search AMapPOIKeywordsSearch:request];
     }
-    else if ([request isKindOfClass:[AMapNavigationSearchRequest class]])
+    else if ([request isKindOfClass:[AMapDrivingRouteSearchRequest class]])
     {
-        [_search AMapNavigationSearch:request];
+        [_search AMapDrivingRouteSearch:request];
     }
     else if ([request isKindOfClass:[AMapInputTipsSearchRequest class]])
     {
@@ -99,12 +100,12 @@
     [_mapTable removeObjectForKey:request];
 }
 
-- (void)onPlaceSearchDone:(AMapPlaceSearchRequest *)request response:(AMapPlaceSearchResponse *)response
+- (void)onPOISearchDone:(AMapPOISearchBaseRequest *)request response:(AMapPOISearchResponse *)response
 {
     [self performBlockWithRequest:request withResponse:response];
 }
 
-- (void)onNavigationSearchDone:(AMapNavigationSearchRequest *)request response:(AMapNavigationSearchResponse *)response
+- (void)onRouteSearchDone:(AMapRouteSearchBaseRequest *)request response:(AMapRouteSearchResponse *)response
 {
     [self performBlockWithRequest:request withResponse:response];
 }

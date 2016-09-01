@@ -172,6 +172,7 @@ typedef NS_ENUM(NSUInteger, DDState) {
     _currentSearchLocation = -1;
     
     _mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
+    _mapView.showsIndoorMap = NO;
     _mapView.showsCompass = NO;
     _mapView.rotateEnabled = NO;
     _mapView.showsScale = NO;

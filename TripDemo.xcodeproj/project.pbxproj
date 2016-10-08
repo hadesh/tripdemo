@@ -13,7 +13,6 @@
 		810379E51ACD6E0A0013124A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810379E41ACD6E0A0013124A /* ViewController.m */; };
 		810379E81ACD6E0A0013124A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 810379E61ACD6E0A0013124A /* Main.storyboard */; };
 		810379EA1ACD6E0A0013124A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 810379E91ACD6E0A0013124A /* Images.xcassets */; };
-		810379F91ACD6E0A0013124A /* TripDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 810379F81ACD6E0A0013124A /* TripDemoTests.m */; };
 		81037A051ACD79CB0013124A /* DDLocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81037A041ACD79CB0013124A /* DDLocationView.m */; };
 		81037A091ACD7ABA0013124A /* DDLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 81037A081ACD7ABA0013124A /* DDLocation.m */; };
 		81037A0F1ACD7BAE0013124A /* endPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 81037A0A1ACD7BAE0013124A /* endPoint.png */; };
@@ -38,16 +37,6 @@
 		C810579C1AD3AE7D00CD0D55 /* icon_taxi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C810579B1AD3AE7D00CD0D55 /* icon_taxi@2x.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		810379F31ACD6E0A0013124A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 810379D11ACD6E090013124A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 810379D81ACD6E0A0013124A;
-			remoteInfo = TripDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		50AB20858F2ADB96B975925F /* Pods-TripDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripDemo/Pods-TripDemo.release.xcconfig"; sourceTree = "<group>"; };
 		810379D91ACD6E0A0013124A /* TripDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +48,6 @@
 		810379E41ACD6E0A0013124A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		810379E71ACD6E0A0013124A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		810379E91ACD6E0A0013124A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		810379F21ACD6E0A0013124A /* TripDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		810379F71ACD6E0A0013124A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		810379F81ACD6E0A0013124A /* TripDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripDemoTests.m; sourceTree = "<group>"; };
 		81037A031ACD79CB0013124A /* DDLocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLocationView.h; sourceTree = "<group>"; };
@@ -110,13 +98,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		810379EF1ACD6E0A0013124A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -143,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				810379D91ACD6E0A0013124A /* TripDemo.app */,
-				810379F21ACD6E0A0013124A /* TripDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -263,39 +243,19 @@
 			productReference = 810379D91ACD6E0A0013124A /* TripDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		810379F11ACD6E0A0013124A /* TripDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 810379FF1ACD6E0A0013124A /* Build configuration list for PBXNativeTarget "TripDemoTests" */;
-			buildPhases = (
-				810379EE1ACD6E0A0013124A /* Sources */,
-				810379EF1ACD6E0A0013124A /* Frameworks */,
-				810379F01ACD6E0A0013124A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				810379F41ACD6E0A0013124A /* PBXTargetDependency */,
-			);
-			name = TripDemoTests;
-			productName = TripDemoTests;
-			productReference = 810379F21ACD6E0A0013124A /* TripDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		810379D11ACD6E090013124A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = AutoNavi;
 				TargetAttributes = {
 					810379D81ACD6E0A0013124A = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					810379F11ACD6E0A0013124A = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 810379D81ACD6E0A0013124A;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -313,7 +273,6 @@
 			projectRoot = "";
 			targets = (
 				810379D81ACD6E0A0013124A /* TripDemo */,
-				810379F11ACD6E0A0013124A /* TripDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -334,13 +293,6 @@
 				810379EA1ACD6E0A0013124A /* Images.xcassets in Resources */,
 				C810579C1AD3AE7D00CD0D55 /* icon_taxi@2x.png in Resources */,
 				81B5E9711AD3CCB200AA7FFE /* Launch Screen.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		810379F01ACD6E0A0013124A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,23 +370,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		810379EE1ACD6E0A0013124A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				810379F91ACD6E0A0013124A /* TripDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		810379F41ACD6E0A0013124A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 810379D81ACD6E0A0013124A /* TripDemo */;
-			targetProxy = 810379F31ACD6E0A0013124A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		810379E61ACD6E0A0013124A /* Main.storyboard */ = {
@@ -461,8 +397,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -471,6 +409,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -503,8 +442,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -512,6 +453,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -531,11 +473,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = YMJ372W38W;
 				INFOPLIST_FILE = TripDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "87cd0391-16b0-4688-90bd-386a7bfa6ffc";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
 			};
 			name = Debug;
 		};
@@ -545,47 +490,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = YMJ372W38W;
 				INFOPLIST_FILE = TripDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		81037A001ACD6E0A0013124A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TripDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripDemo.app/TripDemo";
-			};
-			name = Debug;
-		};
-		81037A011ACD6E0A0013124A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TripDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripDemo.app/TripDemo";
+				PROVISIONING_PROFILE = "87cd0391-16b0-4688-90bd-386a7bfa6ffc";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
 			};
 			name = Release;
 		};
@@ -606,15 +518,6 @@
 			buildConfigurations = (
 				810379FD1ACD6E0A0013124A /* Debug */,
 				810379FE1ACD6E0A0013124A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		810379FF1ACD6E0A0013124A /* Build configuration list for PBXNativeTarget "TripDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				81037A001ACD6E0A0013124A /* Debug */,
-				81037A011ACD6E0A0013124A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
